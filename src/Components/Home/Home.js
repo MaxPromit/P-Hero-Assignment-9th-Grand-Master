@@ -7,6 +7,7 @@ import './Home.css'
 const Home = () => {
     const productItem = useLoaderData();
     const products = productItem.data;
+    console.log(products);
     return (
         <div>
            <div className="banner">
