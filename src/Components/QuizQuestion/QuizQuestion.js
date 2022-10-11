@@ -4,6 +4,7 @@ import './QuizQuestion.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AiFillEye } from "react-icons/ai";
+import './QuizQuestion.css'
 
 const QuizQuestion = ({singlequestion}) => {
     const {question,options,correctAnswer} = singlequestion;

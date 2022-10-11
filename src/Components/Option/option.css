@@ -11,3 +11,13 @@
     cursor: pointer;
     transition: 0.3s;
 }
+@media screen and (max-width: 586px) {
+    .option_li{
+        width: 300px;
+       
+    }
+    .option{
+        width: 275px;
+        padding: 1px;
+    }
+}
