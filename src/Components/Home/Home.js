@@ -17,11 +17,14 @@ const Home = () => {
            <div className="banner_img">
            <img src={pic} alt="" />
            </div>
+           <h3>Count Your Skills</h3>
 
-           </div>
-           {
+           </div >
+          <div className='parent_product'>           
+          {
                 products.map(product => <SingleProduct key={product.id} product={product}></SingleProduct>)
            }
+          </div>
         </div>
     );
 };

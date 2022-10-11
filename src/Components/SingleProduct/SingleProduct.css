@@ -1,0 +1,25 @@
+.parent_product{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+.product_cart{
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #efdb51;
+}
+.product_img img{
+    width: 100%;
+}
+.product_info{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px
+}
+.product_info button{
+    background-color: #274de6;
+    padding: 2px 12px;
+    color: white;
+    border: none;
+}

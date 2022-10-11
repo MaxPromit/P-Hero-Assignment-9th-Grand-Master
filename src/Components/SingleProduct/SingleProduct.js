@@ -1,4 +1,5 @@
 import React from 'react';
+import './SingleProduct.css'
 
 const SingleProduct = ({product}) => {
     const {logo, name} = product
@@ -9,7 +10,7 @@ const SingleProduct = ({product}) => {
                     <img src={logo} alt="" />
                 </div>
                 <div className='product_info'>
-                    {name}
+                    <h4> {name}</h4>
                     <button>Get Quiz</button>
                 </div>
             </div>
