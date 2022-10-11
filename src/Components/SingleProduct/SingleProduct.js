@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './SingleProduct.css'
 
 const SingleProduct = ({product}) => {
-    const {logo, name} = product
+    const {logo, name,id} = product
     return (
         <div>
             <div className='product_cart'>
@@ -11,7 +12,7 @@ const SingleProduct = ({product}) => {
                 </div>
                 <div className='product_info'>
                     <h4> {name}</h4>
-                    <button>Get Quiz</button>
+                    <Link to={`/quiz/${id}`}><button>Get Quiz</button></Link>
                 </div>
             </div>
         </div>
