@@ -10,7 +10,7 @@ const QuizDetails = () => {
     
     return (
         <div>
-            <h3>Quiz  DEtails Page</h3>
+            <h3>Check Your Knowledge</h3>
             <h4>{name}</h4>
             {
                 questions.map(singlequestion => <QuizQuestion key={singlequestion.id} singlequestion={singlequestion}></QuizQuestion>)
