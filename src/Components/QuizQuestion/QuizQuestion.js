@@ -1,15 +1,17 @@
 import React from 'react';
 import Option from '../Option/Option';
 import './QuizQuestion.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const QuizQuestion = ({singlequestion}) => {
     const {question,options,correctAnswer} = singlequestion;
 
     const hadlerQuizChecker = (question) =>{
         if(correctAnswer === question){
-            console.log('You are right');
+            toast('Appriciated')
         }else{
-            console.log('You Provabli Wrogn')
+            toast('Wrogn Answer Mate')
         }
     }
 
@@ -19,6 +21,7 @@ const QuizQuestion = ({singlequestion}) => {
             {
                 options.map(option => <Option hadlerQuizChecker={hadlerQuizChecker} option={option}></Option>)
             }
+             <ToastContainer />
         </div>
     );
 };
