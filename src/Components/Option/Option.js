@@ -1,11 +1,11 @@
 import React from 'react';
 import './option.css'
 
-const Option = ({option}) => {
+const Option = ({option,hadlerQuizChecker}) => {
     return (
         <div className='option'>
             <ul>
-            <li>{option}</li>
+            <li onClick={()=>hadlerQuizChecker(option)}>{option}</li>
             </ul>
         </div>
     );

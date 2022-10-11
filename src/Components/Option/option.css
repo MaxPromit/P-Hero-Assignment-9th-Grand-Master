@@ -5,3 +5,9 @@
     margin: auto;
     margin-top: 20px;
 }
+.option:hover{
+    background-color: lightcyan;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
