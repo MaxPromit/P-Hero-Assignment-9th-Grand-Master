@@ -7,7 +7,7 @@ const Header = () => {
     <div>
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-          <h3>Quiz Master</h3>
+          <h3>Grand Master</h3>
           <button
             className="navbar-toggler"
             type="button"
